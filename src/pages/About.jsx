@@ -14,7 +14,9 @@ export default function About() {
         <Container>
           <Row className="align-items-center justify-content-center">
             <Col lg={8} className="text-center">
-              <div className="hero-avatar">NT</div>
+              <div className="hero-avatar">
+                <img src="../headshot.jpeg" alt="NT" className="avatar-image" />
+              </div>
               <h1 className="hero-title">Natalie Thuente</h1>
               <p className="hero-subtitle">
                 Driven Computer Science and Political Science student entering a Patent Engineer role upon graduation in May 2026. 
