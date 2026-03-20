@@ -10,10 +10,13 @@ export default function About() {
               <div className="hero-avatar">NT</div>
               <h1 className="hero-title">Natalie Thuente</h1>
               <p className="hero-subtitle">
-                Welcome to my personal website. I'm passionate about learning, growing, and making an impact through my work and interests.
+                Driven Computer Science and Political Science student entering a Patent Engineer role upon graduation in May 2026. 
+Interested in Intellectual Property law and applying technical expertise to contribute to patent development.
               </p>
               <div className="hero-links">
-                <a href="mailto:contact@example.com" className="btn-pill">Get in Touch</a>
+                <a href="https://www.linkedin.com/in/natalie-thuente" target="_blank" rel="noopener noreferrer" className="hero-link">
+                  Linkedin
+                </a>
               </div>
             </Col>
           </Row>
