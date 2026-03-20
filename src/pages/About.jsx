@@ -1,5 +1,12 @@
 import { Container, Row, Col } from 'react-bootstrap'
 
+const contactItems = [
+  { label: "Email", value: "nthuente@wisc.edu", link: "mailto:nthuente@wisc.edu" },
+  { label: "Phone", value: "(651)-233-0031" },
+  { label: "Location", value: "Madison, WI" },
+  { label: "LinkedIn", value: "linkedin.com/in/natalie-thuente", link: "https://linkedin.com/in/natalie-thuente" }
+];
+
 export default function About() {
   return (
     <div className="page-about">
@@ -17,52 +24,20 @@ Interested in Intellectual Property law and applying technical expertise to cont
                 <a href="https://www.linkedin.com/in/natalie-thuente" target="_blank" rel="noopener noreferrer" className="hero-link">
                   Linkedin
                 </a>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-
-      <section className="about-section">
-        <Container>
-          <Row className="justify-content-center">
-            <Col lg={8}>
-              <div className="section-card">
-                <h2 className="section-heading">About Me</h2>
-                <p>
-                  I am a driven and curious individual who thrives on new challenges and experiences.
-                  With a strong foundation in academics and a passion for personal growth, I am always
-                  looking for opportunities to expand my horizons.
-                </p>
-                <p>
-                  Outside of my professional and academic pursuits, I enjoy staying active, engaging
-                  with my community, and exploring creative outlets. I believe in the power of
-                  continuous learning and meaningful connections.
-                </p>
-              </div>
-            </Col>
-          </Row>
-
-          <Row className="justify-content-center mt-4">
-            <Col md={4}>
-              <div className="highlight-card">
-                <div className="highlight-icon">&#127891;</div>
-                <h3>Learner</h3>
-                <p>Committed to academic excellence and lifelong learning.</p>
-              </div>
-            </Col>
-            <Col md={4}>
-              <div className="highlight-card">
-                <div className="highlight-icon">&#128640;</div>
-                <h3>Leader</h3>
-                <p>Passionate about leading initiatives and driving results.</p>
-              </div>
-            </Col>
-            <Col md={4}>
-              <div className="highlight-card">
-                <div className="highlight-icon">&#127758;</div>
-                <h3>Explorer</h3>
-                <p>Eager to explore new ideas, cultures, and perspectives.</p>
+                 <ul className="contact-list">
+                  {contactItems.map((item, index) => (
+                    <li key={index}>
+                      <strong>{item.label}:</strong>{" "}
+                      {item.link ? (
+                        <a href={item.link} target="_blank" rel="noopener noreferrer">
+                          {item.value}
+                        </a>
+                      ) : (
+                        item.value
+                      )}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </Col>
           </Row>
