@@ -15,7 +15,7 @@ export default function About() {
           <Row className="align-items-center justify-content-center">
             <Col lg={8} className="text-center">
               <div className="hero-avatar">
-                <img src="../headshot.jpeg" alt="NT" className="avatar-image" />
+                <img src="/headshot.jpeg" alt="NT" className="avatar-image" />
               </div>
               <h1 className="hero-title">Natalie Thuente</h1>
               <p className="hero-subtitle">
