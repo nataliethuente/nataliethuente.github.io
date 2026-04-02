@@ -15,9 +15,13 @@ export default function About() {
         <Container>
           <Row className="align-items-center justify-content-center">
             <Col lg={8} className="text-center">
+<<<<<<< HEAD
               <div className="hero-avatar">
                 <img src={headshotImage} alt="Natalie Thuente" className="avatar-image" />
               </div>
+=======
+              <div className="hero-avatar">NT</div>
+>>>>>>> parent of 15fa2a5 (Rebuilt)
               <h1 className="hero-title">Natalie Thuente</h1>
               <p className="hero-subtitle">
                 Driven Computer Science and Political Science student entering a Patent Engineer role upon graduation in May 2026. 
