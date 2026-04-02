@@ -23,11 +23,6 @@ export default function About() {
                 Driven Computer Science and Political Science student entering a Patent Engineer role upon graduation in May 2026. 
 Interested in Intellectual Property law and applying technical expertise to contribute to patent development.
               </p>
-              <div className="hero-links">
-                <a href="https://www.linkedin.com/in/natalie-thuente" target="_blank" rel="noopener noreferrer" className="hero-link">
-                  Linkedin
-                </a>
-              </div>
               <div className="contact-list">
                 {contactItems.map((item, index) => (
                   <div key={index} className="contact-card">
