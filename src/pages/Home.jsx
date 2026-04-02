@@ -16,9 +16,6 @@ export default function Home() {
       <section id="experience">
         <Experience />
       </section>
-      <section id="skills">
-        <Skills />
-      </section>
       <section id="projects">
         <Projects />
       </section>
