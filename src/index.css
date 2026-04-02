@@ -2,20 +2,20 @@
 :root {
   --primary: #1a1a1a;
   --primary-light: #404040;
-  --primary-soft: #f5f5f5;
-  --accent: #ff6b35;
-  --accent-soft: #fff5f0;
-  --bg: #ffffff;
-  --bg-card: #f9f9f9;
-  --bg-muted: #f0f0f0;
+  --primary-soft: #fef3f7;
+  --accent: #d4639f;
+  --accent-soft: #fce8f3;
+  --bg: #fdf5f8;
+  --bg-card: #fef9fc;
+  --bg-muted: #f5e8f1;
   --text: #2d2d2d;
   --text-heading: #000000;
   --text-light: #666666;
-  --border: #e0e0e0;
-  --border-light: #f0f0f0;
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
-  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
-  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.15);
+  --border: #e8d4e0;
+  --border-light: #f3e8ed;
+  --shadow-sm: 0 2px 8px rgba(212, 99, 159, 0.06);
+  --shadow-md: 0 8px 24px rgba(212, 99, 159, 0.09);
+  --shadow-lg: 0 16px 40px rgba(212, 99, 159, 0.12);
   --radius: 8px;
   --radius-sm: 4px;
   --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -29,7 +29,7 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-family: 'Martina Plantijn', 'Segoe UI', system-ui, -apple-system, serif;
   font-size: 16px;
   line-height: 1.6;
   color: var(--text);
@@ -39,7 +39,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-family: 'Martina Plantijn', 'Segoe UI', system-ui, -apple-system, serif;
   color: var(--text-heading);
   font-weight: 700;
   line-height: 1.25;
@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site-brand {
-  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Martina Plantijn', 'Segoe UI', system-ui, serif;
   font-weight: 800;
   font-size: 1.35rem;
   color: var(--primary) !important;
@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site-navbar .nav-link {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Martina Plantijn', serif;
   font-weight: 500;
   font-size: 0.95rem;
   color: var(--text) !important;
@@ -244,7 +244,7 @@ html {
   display: inline-block;
   padding: 0.75rem 1.75rem;
   border-radius: 999px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Martina Plantijn', serif;
   font-weight: 700;
   font-size: 0.95rem;
   text-decoration: none;
@@ -330,12 +330,59 @@ html {
   color: var(--text-light);
   margin: 0;
 }
+
 .contact-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2.5rem;
   list-style: none;
   padding: 0;
+}
+
+.contact-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  min-width: 180px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.contact-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+.contact-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 0.5rem 0;
+}
+
+.contact-value {
+  font-size: 0.95rem;
+  color: var(--text);
+  margin: 0;
+  word-break: break-word;
+}
+
+.contact-value a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.contact-value a:hover {
+  text-decoration: underline;
 }
 
 /* ===== EDUCATION PAGE ===== */
@@ -407,7 +454,7 @@ html {
 }
 
 .timeline-subtitle {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Martina Plantijn', serif;
   font-size: 1rem;
   font-weight: 500;
   color: var(--text-light);
@@ -421,7 +468,7 @@ html {
 }
 
 .highlights-box h5 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Martina Plantijn', serif;
   font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -492,7 +539,7 @@ html {
 }
 
 .experience-company {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Martina Plantijn', serif;
   font-size: 1rem;
   font-weight: 500;
   color: var(--primary);

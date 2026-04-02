@@ -27,20 +27,20 @@ Interested in Intellectual Property law and applying technical expertise to cont
                 <a href="https://www.linkedin.com/in/natalie-thuente" target="_blank" rel="noopener noreferrer" className="hero-link">
                   Linkedin
                 </a>
-                 <ul className="contact-list">
-                  {contactItems.map((item, index) => (
-                    <li key={index}>
-                      <strong>{item.label}:</strong>{" "}
-                      {item.link ? (
-                        <a href={item.link} target="_blank" rel="noopener noreferrer">
-                          {item.value}
-                        </a>
-                      ) : (
-                        item.value
-                      )}
-                    </li>
-                  ))}
-                </ul>
+              </div>
+              <div className="contact-list">
+                {contactItems.map((item, index) => (
+                  <div key={index} className="contact-card">
+                    <p className="contact-label">{item.label}</p>
+                    {item.link ? (
+                      <a href={item.link} target="_blank" rel="noopener noreferrer" className="contact-value">
+                        {item.value}
+                      </a>
+                    ) : (
+                      <p className="contact-value">{item.value}</p>
+                    )}
+                  </div>
+                ))}
               </div>
             </Col>
           </Row>
