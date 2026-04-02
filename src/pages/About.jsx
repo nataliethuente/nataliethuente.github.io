@@ -1,5 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap'
-import headshotImage from '../assets/headshot.jpeg'
+import headshotImage from '../assets/Natalie-Thuente.jpg'
 
 const contactItems = [
   { label: "Email", value: "nthuente@wisc.edu", link: "mailto:nthuente@wisc.edu" },
