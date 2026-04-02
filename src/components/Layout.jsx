@@ -1,6 +1,6 @@
-import { Outlet } from 'react-router-dom'
+import { Outlet, useLocation } from 'react-router-dom'
 import { Container, Nav, Navbar } from 'react-bootstrap'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 
 const navLinks = [
   { id: 'about', label: 'About' },
@@ -12,31 +12,17 @@ const navLinks = [
 ]
 
 export default function Layout() {
-  const [activeSection, setActiveSection] = useState('about')
+  const location = useLocation()
 
   useEffect(() => {
-    // Add scroll listener to update active nav item
-    const handleScroll = () => {
-      const sections = navLinks.map(link => document.getElementById(link.id))
-      const scrollPosition = window.scrollY + 100
-
-      for (let i = sections.length - 1; i >= 0; i--) {
-        if (sections[i] && sections[i].offsetTop <= scrollPosition) {
-          setActiveSection(navLinks[i].id)
-          break
-        }
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+    // Enable smooth scrolling
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [location])
 
   const handleNavClick = (id) => {
     const element = document.getElementById(id)
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
-      setActiveSection(id)
     }
   }
 
@@ -65,7 +51,7 @@ export default function Layout() {
                     e.preventDefault()
                     handleNavClick(id)
                   }}
-                  className={`nav-scroll-link ${activeSection === id ? 'active' : ''}`}
+                  className="nav-scroll-link"
                 >
                   {label}
                 </Nav.Link>
@@ -75,7 +61,7 @@ export default function Layout() {
         </Container>
       </Navbar>
 
-      <main className="site-main">
+      <main className="site-main" key={location.pathname}>
         <Outlet />
       </main>
 
