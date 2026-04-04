@@ -1179,14 +1179,19 @@ html {
   border-radius: var(--radius) var(--radius) 0 0;
   margin: 0 0 1rem 0;
   background: var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-image img {
-  width: 100%;
-  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
   object-fit: cover;
+  object-position: center center;
   transition: transform var(--transition);
-  display: block;
 }
 
 .project-card:hover .project-image img {
