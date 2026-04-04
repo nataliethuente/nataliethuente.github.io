@@ -7,7 +7,7 @@ const experienceData = [
     location: 'Milwaukee, WI',
     period: 'May 2025 - July 2025',
     type: 'Internship',
-    description: 'Analyzed Office Actions, attended Examiner interviews, and drafted assessments and responses accordingly.',
+    description: 'Contributed to patent prosecution and applied technical knowledge.',
     responsibilities: [
       'Analyzed Office Actions and prepared written responses',
       'Attended Examiner interviews and discussed case strategy',
@@ -21,12 +21,12 @@ const experienceData = [
     location: 'Madison, WI',
     period: 'September 2023 - Present',
     type: 'Part-Time',
-    description: 'Provide office administration and technical support to School of Education personnel.',
+    description: 'Provided administrative and technical support to School of Education personnel.',
     responsibilities: [
       'Performed office administration tasks including electronic filing and visitor intake',
       'Answered phone calls and provided customer service',
       'Offered IT and technical support services to office personnel',
-      'Maintained organized filing systems and databases',
+      'Supported events and meetings with setup and coordination',
     ],
   },
   {
@@ -35,7 +35,7 @@ const experienceData = [
     location: 'Brooklyn Park, MN',
     period: 'May 2024 - December 2024',
     type: 'Internship',
-    description: 'Analyzed healthcare data and configured patient healthcare portal for testing environment.',
+    description: 'Analyzed healthcare data and researched product development opportunities.',
     responsibilities: [
       'Created interactive reports in PowerBI with Healthcare (FHIR) data',
       'Installed and configured patient healthcare portal for testing environment',
@@ -49,12 +49,12 @@ const experienceData = [
     location: 'St. Paul, MN',
     period: 'May 2019 - August 2023',
     type: 'Part-Time',
-    description: 'Drafted immigration petition forms and managed legal database systems.',
+    description: 'Assisted with client case management and provided both administrative and technical support.',
     responsibilities: [
       'Drafted immigration petition forms and collated filings',
       'Reorganized and managed legal database and online filing systems',
       'Improved accessibility and workflow efficiency',
-      'Provided administrative support to attorneys',
+      'Greeted clients and provided customer service in person and over the phone',
     ],
   },
 ]

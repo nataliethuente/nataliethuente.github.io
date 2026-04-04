@@ -177,7 +177,7 @@ html {
 }
 
 .page-title {
-  font-size: 3.75rem;
+  font-size: 3rem;
   font-weight: 800;
   margin-bottom: 0.75rem;
   color: var(--text-heading);
@@ -347,7 +347,7 @@ html {
 }
 
 .section-heading {
-  font-size: 2rem;
+  font-size: 1.75rem;
   margin-bottom: 2rem;
   position: relative;
   display: inline-block;
@@ -887,12 +887,16 @@ html {
 }
 
 .project-category {
-  display: inline-block;
-  padding: 0.3rem 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  height: 48px;
+  padding: 0 0.6rem;
   background: var(--bg-muted);
   color: var(--accent);
-  border-radius: 20px;
-  font-size: 0.75rem;
+  border-radius: 50%;
+  font-size: 0.78rem;
   font-weight: 700;
   margin-bottom: 1rem;
   text-transform: uppercase;
@@ -1082,18 +1086,18 @@ html {
 }
 
 .project-category.project {
-  background: var(--bg-muted);
-  color: #1f87c9;
+  background: #1f87c9;
+  color: #ffffff;
 }
 
 .project-category.award {
-  background: var(--accent-soft);
-  color: var(--accent);
+  background: var(--accent);
+  color: #ffffff;
 }
 
 .project-category.activity {
-  background: var(--accent-soft);
-  color: #1f87c9;
+  background: #e76fa8;
+  color: #ffffff;
 }
 
 /* ===== Mobile Responsive for New Sections ===== */
