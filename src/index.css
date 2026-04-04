@@ -1108,3 +1108,143 @@ html {
     font-size: 0.85rem;
   }
 }
+
+/* ===== PROJECT IMAGES & LINKS ===== */
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: var(--radius) var(--radius) 0 0;
+  margin: -2.25rem -2.25rem 1.5rem -2.25rem;
+  background: var(--border-light);
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition);
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.project-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--primary);
+  color: #ffffff !important;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: var(--transition);
+  flex: 1;
+  text-align: center;
+}
+
+.project-link:hover {
+  background: var(--accent);
+  transform: translateY(-2px);
+}
+
+.project-link.github {
+  background: var(--accent);
+}
+
+.project-link.github:hover {
+  background: var(--primary);
+}
+
+/* ===== ACTIVITY IMAGES & LINKS ===== */
+.activity-image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: var(--radius) var(--radius) 0 0;
+  margin: -2.5rem -2.5rem 1.5rem -2.5rem;
+  background: var(--border-light);
+}
+
+.activity-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition);
+}
+
+.activity-card:hover .activity-image img {
+  transform: scale(1.05);
+}
+
+.activity-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.activity-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--accent-soft);
+  color: var(--accent) !important;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: var(--transition);
+  text-align: center;
+  border: 1px solid var(--accent);
+}
+
+.activity-link:hover {
+  background: var(--accent);
+  color: #ffffff !important;
+}
+
+/* ===== IMAGE & LINK RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .project-image {
+    height: 150px;
+    margin: -1.75rem -1.75rem 1.25rem -1.75rem;
+  }
+
+  .project-links {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .project-link {
+    flex: unset;
+  }
+
+  .activity-image {
+    height: 140px;
+    margin: -2rem -2rem 1.25rem -2rem;
+  }
+
+  .activity-link {
+    margin-top: 0.75rem;
+  }
+}

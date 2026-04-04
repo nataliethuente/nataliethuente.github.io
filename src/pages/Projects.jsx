@@ -7,6 +7,9 @@ const projectsAndAwards = [
     date: 'September 2025',
     description: 'Improved patient portal accessibility to increase patient engagement and leverage of healthcare data.',
     tags: ['Healthcare', 'Portal', 'UX'],
+    image: null, // Add image path here: require('../assets/projects/regenmed.jpg')
+    projectLink: null, // Add project URL here
+    githubLink: null, // Add GitHub repo here
   },
   {
     title: 'Virtual Environment Patient Portal',
@@ -14,6 +17,9 @@ const projectsAndAwards = [
     date: 'July 2024',
     description: 'Installed and configured patient portal in virtual testing environment at Olympus Corporation, managing setup, testing and configuration to ensure secure access to healthcare data.',
     tags: ['Testing', 'Configuration', 'Security'],
+    image: null,
+    projectLink: null,
+    githubLink: null,
   },
   {
     title: 'Dick and Julie Daly Award',
@@ -21,6 +27,9 @@ const projectsAndAwards = [
     date: '2026',
     description: 'Selected for outstanding initiative, professionalism and representation of the School of Education Deans Office.',
     tags: ['Achievement', 'Recognition'],
+    image: null,
+    projectLink: null,
+    githubLink: null,
   },
   {
     title: 'Folds of Honor Scholarship',
@@ -28,6 +37,9 @@ const projectsAndAwards = [
     date: '2022-2026',
     description: 'Awarded merit-based scholarship supporting the education of military families for all four years of undergraduate study.',
     tags: ['Scholarship', 'Merit'],
+    image: null,
+    projectLink: null,
+    githubLink: null,
   },
   {
     title: 'Deans List Recognition',
@@ -35,6 +47,9 @@ const projectsAndAwards = [
     date: '2022-2026',
     description: 'Recognized for maintaining a high GPA (3.8+) throughout all semesters of undergraduate study.',
     tags: ['Academic Excellence'],
+    image: null,
+    projectLink: null,
+    githubLink: null,
   },
 ]
 
@@ -54,14 +69,35 @@ export default function Projects() {
             {projectsAndAwards.map((item, i) => (
               <Col md={6} lg={4} className="mb-4" key={i}>
                 <div className="project-card">
-                  <span className={`project-category ${item.category.toLowerCase()}`}>{item.category}</span>
-                  {item.date && <span className="project-date">{item.date}</span>}
-                  <h3 className="project-title">{item.title}</h3>
-                  <p className="project-desc">{item.description}</p>
-                  <div className="project-tags">
-                    {item.tags.map((tag, j) => (
-                      <span className="project-tag" key={j}>{tag}</span>
-                    ))}
+                  {item.image && (
+                    <div className="project-image">
+                      <img src={item.image} alt={item.title} />
+                    </div>
+                  )}
+                  <div className="project-content">
+                    <span className={`project-category ${item.category.toLowerCase()}`}>{item.category}</span>
+                    {item.date && <span className="project-date">{item.date}</span>}
+                    <h3 className="project-title">{item.title}</h3>
+                    <p className="project-desc">{item.description}</p>
+                    <div className="project-tags">
+                      {item.tags.map((tag, j) => (
+                        <span className="project-tag" key={j}>{tag}</span>
+                      ))}
+                    </div>
+                    {(item.projectLink || item.githubLink) && (
+                      <div className="project-links">
+                        {item.projectLink && (
+                          <a href={item.projectLink} target="_blank" rel="noopener noreferrer" className="project-link">
+                            View Project →
+                          </a>
+                        )}
+                        {item.githubLink && (
+                          <a href={item.githubLink} target="_blank" rel="noopener noreferrer" className="project-link github">
+                            GitHub
+                          </a>
+                        )}
+                      </div>
+                    )}
                   </div>
                 </div>
               </Col>
