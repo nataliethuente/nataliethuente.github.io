@@ -3,7 +3,6 @@ import headshotImage from '../assets/Natalie-Thuente.jpg'
 
 const contactItems = [
   { label: "Email", value: "nthuente@wisc.edu", link: "mailto:nthuente@wisc.edu" },
-  { label: "Phone", value: "(651)-233-0031" },
   { label: "Location", value: "Madison, WI" },
   { label: "LinkedIn", value: "linkedin.com/in/natalie-thuente", link: "https://linkedin.com/in/natalie-thuente" }
 ];
