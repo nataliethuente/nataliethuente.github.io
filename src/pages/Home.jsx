@@ -3,7 +3,6 @@ import Education from './Education'
 import SkillsSoftware from './SkillsSoftware'
 import Experience from './Experience'
 import Projects from './Projects'
-import Activities from './Activities'
 
 export default function Home() {
   return (
@@ -22,9 +21,6 @@ export default function Home() {
       </section>
       <section id="projects">
         <Projects />
-      </section>
-      <section id="activities">
-        <Activities />
       </section>
     </>
   )

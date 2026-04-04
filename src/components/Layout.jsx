@@ -8,7 +8,6 @@ const navLinks = [
   { id: 'skills', label: 'Skills' },
   { id: 'experience', label: 'Experience' },
   { id: 'projects', label: 'Projects & Awards' },
-  { id: 'activities', label: 'Activities' },
 ]
 
 export default function Layout() {

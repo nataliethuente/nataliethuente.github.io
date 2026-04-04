@@ -2,39 +2,59 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 const experienceData = [
   {
-    title: 'Position Title',
-    company: 'Company / Organization',
-    period: 'Summer 2025',
+    title: 'EDGE Patent Engineer Intern',
+    company: 'Michael Best & Friedrich',
+    location: 'Milwaukee, WI',
+    period: 'May 2025 - July 2025',
     type: 'Internship',
-    description: 'Contributed to key projects and collaborated with team members to deliver impactful results.',
+    description: 'Analyzed Office Actions, attended Examiner interviews, and drafted assessments and responses accordingly.',
     responsibilities: [
-      'Collaborated with cross-functional teams on key initiatives',
-      'Developed and implemented project deliverables',
-      'Presented findings and recommendations to stakeholders',
+      'Analyzed Office Actions and prepared written responses',
+      'Attended Examiner interviews and discussed case strategy',
+      'Discussed invention clearance and patentability with clients',
+      'Managed concurrent deadlines and delivered high-quality work product',
     ],
   },
   {
-    title: 'Position Title',
-    company: 'Company / Organization',
-    period: 'Summer 2024',
-    type: 'Internship',
-    description: 'Gained valuable hands-on experience in a professional environment.',
+    title: 'Business Office Assistant',
+    company: 'School of Education, University of Wisconsin',
+    location: 'Madison, WI',
+    period: 'September 2023 - Present',
+    type: 'Part-Time',
+    description: 'Provide office administration and technical support to School of Education personnel.',
     responsibilities: [
-      'Assisted with day-to-day operations and project management',
-      'Conducted research and analysis to support decision-making',
-      'Built strong professional relationships and skills',
+      'Performed office administration tasks including electronic filing and visitor intake',
+      'Answered phone calls and provided customer service',
+      'Offered IT and technical support services to office personnel',
+      'Maintained organized filing systems and databases',
     ],
   },
   {
-    title: 'Campus Role',
-    company: 'University Organization',
-    period: '2022 - Present',
-    type: 'Leadership',
-    description: 'Actively contributed to the campus community through leadership and service.',
+    title: 'Software Engineering Intern',
+    company: 'Olympus Corporation of the Americas',
+    location: 'Brooklyn Park, MN',
+    period: 'May 2024 - December 2024',
+    type: 'Internship',
+    description: 'Analyzed healthcare data and configured patient healthcare portal for testing environment.',
     responsibilities: [
-      'Led meetings and coordinated events',
-      'Mentored new members and facilitated onboarding',
-      'Managed organizational communications and outreach',
+      'Created interactive reports in PowerBI with Healthcare (FHIR) data',
+      'Installed and configured patient healthcare portal for testing environment',
+      'Researched Data Transferral in EMR Systems and presented findings',
+      'Contributed to product development discussions with findings',
+    ],
+  },
+  {
+    title: 'Paralegal',
+    company: 'Guyton-Thuente P.A.',
+    location: 'St. Paul, MN',
+    period: 'May 2019 - August 2023',
+    type: 'Part-Time',
+    description: 'Drafted immigration petition forms and managed legal database systems.',
+    responsibilities: [
+      'Drafted immigration petition forms and collated filings',
+      'Reorganized and managed legal database and online filing systems',
+      'Improved accessibility and workflow efficiency',
+      'Provided administrative support to attorneys',
     ],
   },
 ]
@@ -58,6 +78,7 @@ export default function Experience() {
                   <span className="experience-type">{item.type}</span>
                   <h3 className="experience-title">{item.title}</h3>
                   <h4 className="experience-company">{item.company}</h4>
+                  {item.location && <p className="experience-location">{item.location}</p>}
                   <span className="experience-period">{item.period}</span>
                 </Col>
                 <Col lg={8}>

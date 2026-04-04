@@ -1,4 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap'
+import regenmedImg from '../assets/regenmed.jpeg'
+import soeImg from '../assets/soe.jpeg'
 
 const projectsAndAwards = [
   {
@@ -6,10 +8,10 @@ const projectsAndAwards = [
     category: 'Project',
     date: 'September 2025',
     description: 'Improved patient portal accessibility to increase patient engagement and leverage of healthcare data.',
-    tags: ['Healthcare', 'Portal', 'UX'],
-    image: null, // Add image path here: require('../assets/projects/regenmed.jpg')
-    projectLink: null, // Add project URL here
-    githubLink: null, // Add GitHub repo here
+    tags: ['Healthcare', 'UX'],
+    image: regenmedImg,
+    projectLink: 'https://www.linkedin.com/posts/regenmedcircles_digitalhealth-healthtech-datascience-activity-7402353507359666178-Uan4?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEBcV8wBF-ZKuUdb73uipAcB7ORc5mi3ukc',
+    githubLink: null,
   },
   {
     title: 'Virtual Environment Patient Portal',
@@ -26,9 +28,9 @@ const projectsAndAwards = [
     category: 'Award',
     date: '2026',
     description: 'Selected for outstanding initiative, professionalism and representation of the School of Education Deans Office.',
-    tags: ['Achievement', 'Recognition'],
-    image: null,
-    projectLink: null,
+    tags: ['Recognition'],
+    image: soeImg,
+    projectLink: 'https://education.wisc.edu/about/faculty-staff-awards/2026-faculty-and-staff-award-winners/#daly-student-award',
     githubLink: null,
   },
   {
@@ -36,7 +38,7 @@ const projectsAndAwards = [
     category: 'Award',
     date: '2022-2026',
     description: 'Awarded merit-based scholarship supporting the education of military families for all four years of undergraduate study.',
-    tags: ['Scholarship', 'Merit'],
+    tags: ['Merit'],
     image: null,
     projectLink: null,
     githubLink: null,
@@ -88,7 +90,7 @@ export default function Projects() {
                       <div className="project-links">
                         {item.projectLink && (
                           <a href={item.projectLink} target="_blank" rel="noopener noreferrer" className="project-link">
-                            View Project →
+                            Learn More
                           </a>
                         )}
                         {item.githubLink && (

@@ -6,13 +6,13 @@
   --accent: #8a6e8d;
   --accent-soft: #f0e8f5;
   --bg: #faf9f7;
-  --bg-card: #ffffff;
-  --bg-muted: #f3f1ee;
+  --bg-card: #ede5f5;
+  --bg-muted: #faf9f7;
   --text: #3a3a3a;
   --text-heading: #000000;
   --text-light: #6b6b6b;
-  --border: #e5e2dd;
-  --border-light: #f0eeeb;
+  --border: #dcd5e5;
+  --border-light: #e8e0f0;
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.06);
   --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.08);
@@ -45,6 +45,10 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.3;
 }
 
+a, button {
+  font-family: 'Martina Plantijn', 'Segoe UI', system-ui, -apple-system, serif;
+}
+
 /* ===== Site Wrapper ===== */
 .site-wrapper {
   display: flex;
@@ -65,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site-brand {
-  font-family: 'Martina Plantijn', 'Segoe UI', system-ui, serif;
+  font-family: 'Martina Plantijn', 'Segoe UI', system-ui, -apple-system, serif;
   font-weight: 800;
   font-size: 1.4rem;
   color: var(--primary) !important;
@@ -78,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site-navbar .nav-link {
-  font-family: 'Martina Plantijn', serif;
+  font-family: 'Martina Plantijn', 'Segoe UI', system-ui, -apple-system, serif;
   font-weight: 500;
   font-size: 0.95rem;
   color: var(--text) !important;
@@ -167,9 +171,9 @@ html {
 /* ===== Page Headers ===== */
 .page-header {
   text-align: center;
-  padding: 5rem 0 4rem;
-  background: var(--bg);
-  border-bottom: 1px solid var(--border-light);
+  padding: 3rem 0 2rem;
+  background: transparent;
+  border-bottom: none;
 }
 
 .page-title {
@@ -191,18 +195,77 @@ html {
 
 /* ===== Content Section ===== */
 .content-section {
-  padding: 4rem 0 5rem;
+  padding: 3rem 0 4rem;
+}
+
+/* ===== PAGE WRAPPER CARDS ===== */
+.page-education,
+.page-skills,
+.page-experience,
+.page-projects {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin: 2rem auto;
+  max-width: 1200px;
+  box-shadow: var(--shadow-md);
+}
+
+.page-about {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.page-about .hero-section {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 3rem 2rem 4rem;
+}
+
+.page-education .page-header,
+.page-education .content-section,
+.page-skills .page-header,
+.page-skills .content-section,
+.page-experience .page-header,
+.page-experience .content-section,
+.page-projects .page-header,
+.page-projects .content-section {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  max-width: none;
+}
+
+.page-education .page-header,
+.page-experience .page-header,
+.page-projects .page-header,
+.page-skills .page-header {
+  padding: 3rem 2rem 2rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.page-education .content-section,
+.page-skills .content-section,
+.page-experience .content-section,
+.page-projects .content-section {
+  padding: 2rem;
 }
 
 /* ===== ABOUT PAGE ===== */
 .hero-section {
   padding: 6rem 0 4rem;
-  background: var(--bg);
+  background: transparent;
 }
 
 .hero-avatar {
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background: linear-gradient(135deg, #f8f7f5, #f0eeeb);
   display: flex;
@@ -248,7 +311,7 @@ html {
   display: inline-block;
   padding: 0.85rem 2rem;
   border-radius: 999px;
-  font-family: 'Martina Plantijn', serif;
+  font-family: 'Martina Plantijn', 'Segoe UI', system-ui, -apple-system, serif;
   font-weight: 700;
   font-size: 0.95rem;
   text-decoration: none;
@@ -400,10 +463,10 @@ html {
 
 /* ===== EDUCATION PAGE ===== */
 .edu-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
+  background: var(--bg-muted);
+  border: 1px solid var(--border-light);
   border-radius: var(--radius);
-  padding: 3rem;
+  padding: 2rem;
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
 }
@@ -593,7 +656,7 @@ html {
 }
 
 .timeline-subtitle {
-  font-family: 'Martina Plantijn', serif;
+  font-family: 'Martina Plantijn', 'Segoe UI', system-ui, -apple-system, serif;
   font-size: 1.05rem;
   font-weight: 600;
   color: var(--text-light);
@@ -608,7 +671,7 @@ html {
 }
 
 .highlights-box h5 {
-  font-family: 'Martina Plantijn', serif;
+  font-family: 'Martina Plantijn', 'Segoe UI', system-ui, -apple-system, serif;
   font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -646,11 +709,11 @@ html {
 
 /* ===== EXPERIENCE PAGE ===== */
 .experience-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
+  background: var(--bg-muted);
+  border: 1px solid var(--border-light);
   border-radius: var(--radius);
-  padding: 2.5rem;
-  margin-bottom: 2rem;
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
   border-left: 3px solid var(--accent);
@@ -682,11 +745,18 @@ html {
 }
 
 .experience-company {
-  font-family: 'Martina Plantijn', serif;
+  font-family: 'Martina Plantijn', 'Segoe UI', system-ui, -apple-system, serif;
   font-size: 1.05rem;
   font-weight: 600;
   color: var(--accent);
   margin-bottom: 0.25rem;
+}
+
+.experience-location {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 0.3px;
 }
 
 .experience-period {
@@ -788,10 +858,10 @@ html {
 
 /* ===== PROJECTS PAGE ===== */
 .project-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
+  background: var(--bg-muted);
+  border: 1px solid var(--border-light);
   border-radius: var(--radius);
-  padding: 2.25rem;
+  padding: 1.5rem;
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
   height: 100%;
@@ -848,59 +918,8 @@ html {
   color: var(--text-light);
 }
 /* ===== ACTIVITIES PAGE ===== */
-.activity-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 2.5rem;
-  text-align: center;
-  box-shadow: var(--shadow-sm);
-  transition: var(--transition);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.activity-card:hover {
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-4px);
-  border-color: var(--accent);
-}
-.activity-icon {
-  font-size: 2.75rem;
-  margin-bottom: 1.25rem;
-}
+/* Removed - Activities page no longer used */
 
-.activity-name {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-  font-weight: 800;
-}
-.activity-role {
-  display: inline-block;
-  padding: 0.25rem 0.75rem;
-  background: var(--accent-soft);
-  color: var(--accent);
-  border-radius: 20px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  letter-spacing: 0.3px;
-}
-.activity-period {
-  display: block;
-  font-size: 0.8rem;
-  color: var(--text-light);
-  margin-bottom: 1rem;
-  letter-spacing: 0.3px;
-}
-
-.activity-desc {
-  font-size: 0.95rem;
-  color: var(--text);
-  margin: 0;
-  line-height: 1.7;
-}
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
@@ -952,21 +971,8 @@ html {
   .project-card {
     padding: 1.75rem;
   }
-
-  .activity-card {
-    padding: 2rem;
-  }
 }
 /* ===== NEW PAGE STYLES ===== */
-
-.activity-org {
-  display: block;
-  font-size: 0.8rem;
-  color: var(--accent);
-  font-weight: 600;
-  margin-top: 0.25rem;
-  letter-spacing: 0.3px;
-}
 
 /* ===== EDUCATION PAGE ENHANCEMENTS ===== */
 .edu-main-info {
@@ -1004,10 +1010,10 @@ html {
 
 /* ===== SKILLS & SOFTWARE PAGE ===== */
 .page-skills .skills-group {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
+  background: var(--bg-muted);
+  border: 1px solid var(--border-light);
   border-radius: var(--radius);
-  padding: 2.5rem;
+  padding: 1.5rem;
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
   height: 100%;
@@ -1019,8 +1025,8 @@ html {
 }
 
 .skills-category-title {
-  font-size: 1.4rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
   font-weight: 800;
   color: var(--text-heading);
   letter-spacing: -0.5px;
@@ -1029,16 +1035,16 @@ html {
 .skills-items {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.85rem;
+  gap: 0.6rem;
 }
 
 .skill-badge {
   background: var(--bg-muted);
   border: 1px solid var(--border);
   color: var(--text);
-  padding: 0.6rem 1.25rem;
+  padding: 0.45rem 1rem;
   border-radius: 20px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 500;
   transition: var(--transition);
 }
@@ -1099,8 +1105,26 @@ html {
   }
 
   .skills-category-title {
-    font-size: 1.2rem;
-    margin-bottom: 1.25rem;
+    font-size: 1rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .skill-badge {
+    padding: 0.4rem 0.85rem;
+    font-size: 0.75rem;
+  }
+
+  .page-about .hero-section {
+    margin: 1.5rem auto;
+    max-width: calc(100% - 2rem);
+  }
+
+  .page-education .content-section,
+  .page-skills .content-section,
+  .page-experience .content-section,
+  .page-projects .content-section {
+    margin: 1.5rem auto 2rem;
+    max-width: calc(100% - 2rem);
   }
 
   .skill-badge {
@@ -1177,51 +1201,8 @@ html {
 }
 
 /* ===== ACTIVITY IMAGES & LINKS ===== */
-.activity-image {
-  width: 100%;
-  height: 180px;
-  overflow: hidden;
-  border-radius: var(--radius) var(--radius) 0 0;
-  margin: -2.5rem -2.5rem 1.5rem -2.5rem;
-  background: var(--border-light);
-}
+/* Removed - Activities page no longer used */
 
-.activity-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform var(--transition);
-}
-
-.activity-card:hover .activity-image img {
-  transform: scale(1.05);
-}
-
-.activity-content {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.activity-link {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background: var(--accent-soft);
-  color: var(--accent) !important;
-  text-decoration: none;
-  border-radius: 6px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  transition: var(--transition);
-  text-align: center;
-  border: 1px solid var(--accent);
-}
-
-.activity-link:hover {
-  background: var(--accent);
-  color: #ffffff !important;
-}
 
 /* ===== IMAGE & LINK RESPONSIVE ===== */
 @media (max-width: 768px) {
@@ -1237,14 +1218,5 @@ html {
 
   .project-link {
     flex: unset;
-  }
-
-  .activity-image {
-    height: 140px;
-    margin: -2rem -2rem 1.25rem -2rem;
-  }
-
-  .activity-link {
-    margin-top: 0.75rem;
   }
 }

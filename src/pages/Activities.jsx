@@ -1,4 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap'
+import runningImg from '../assets/running.png'
 
 const activities = [
   {
@@ -7,8 +8,8 @@ const activities = [
     organization: 'University of Wisconsin-Madison',
     description: 'Developed valuable professional skills through engagement with legal professionals and explored career paths in law and intellectual property.',
     icon: '⚖️',
-    image: null, // Add image path here
-    link: null, // Add link to organization/group here
+    image: null,
+    link: null,
   },
   {
     name: 'Code-to-Connect Club',
@@ -31,7 +32,7 @@ const activities = [
     role: 'Athlete',
     description: 'Passionate about long-distance running. Completed the Duluth Marathon in 2024 and committed to athletic pursuits.',
     icon: '🏃',
-    image: null,
+    image: runningImg,
     link: null,
   },
 ]
