@@ -1,5 +1,6 @@
 import About from './About'
 import Education from './Education'
+import SkillsSoftware from './SkillsSoftware'
 import Experience from './Experience'
 import Projects from './Projects'
 import Activities from './Activities'
@@ -12,6 +13,9 @@ export default function Home() {
       </section>
       <section id="education">
         <Education />
+      </section>
+      <section id="skills">
+        <SkillsSoftware />
       </section>
       <section id="experience">
         <Experience />

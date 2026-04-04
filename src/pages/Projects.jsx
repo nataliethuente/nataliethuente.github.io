@@ -1,41 +1,40 @@
 import { Container, Row, Col } from 'react-bootstrap'
 
-const projects = [
+const projectsAndAwards = [
   {
-    title: 'Research Project',
-    category: 'Academic',
-    description: 'Conducted in-depth research on a topic of interest, resulting in a comprehensive paper and presentation.',
-    tags: ['Research', 'Analysis', 'Writing'],
+    title: 'RegenMed Capstone',
+    category: 'Project',
+    date: 'September 2025',
+    description: 'Improved patient portal accessibility to increase patient engagement and leverage of healthcare data.',
+    tags: ['Healthcare', 'Portal', 'UX'],
   },
   {
-    title: 'Community Initiative',
-    category: 'Service',
-    description: 'Organized and led a community service initiative that brought together volunteers to make a positive impact.',
-    tags: ['Leadership', 'Community', 'Planning'],
+    title: 'Virtual Environment Patient Portal',
+    category: 'Project',
+    date: 'July 2024',
+    description: 'Installed and configured patient portal in virtual testing environment at Olympus Corporation, managing setup, testing and configuration to ensure secure access to healthcare data.',
+    tags: ['Testing', 'Configuration', 'Security'],
   },
   {
-    title: 'Creative Portfolio',
-    category: 'Personal',
-    description: 'Developed a personal portfolio showcasing creative work, design skills, and personal interests.',
-    tags: ['Design', 'Creativity', 'Branding'],
+    title: 'Dick and Julie Daly Award',
+    category: 'Award',
+    date: '2026',
+    description: 'Selected for outstanding initiative, professionalism and representation of the School of Education Deans Office.',
+    tags: ['Achievement', 'Recognition'],
   },
   {
-    title: 'Team Collaboration Project',
-    category: 'Academic',
-    description: 'Worked with a team to develop a comprehensive solution to a real-world challenge presented in coursework.',
-    tags: ['Teamwork', 'Problem Solving', 'Presentation'],
+    title: 'Folds of Honor Scholarship',
+    category: 'Award',
+    date: '2022-2026',
+    description: 'Awarded merit-based scholarship supporting the education of military families for all four years of undergraduate study.',
+    tags: ['Scholarship', 'Merit'],
   },
   {
-    title: 'Event Coordination',
-    category: 'Leadership',
-    description: 'Planned and executed large-scale events, managing logistics, budgets, and volunteer coordination.',
-    tags: ['Event Planning', 'Management', 'Organization'],
-  },
-  {
-    title: 'Personal Development Blog',
-    category: 'Personal',
-    description: 'Created content around personal growth, productivity tips, and reflections on experiences.',
-    tags: ['Writing', 'Content', 'Growth'],
+    title: 'Deans List Recognition',
+    category: 'Award',
+    date: '2022-2026',
+    description: 'Recognized for maintaining a high GPA (3.8+) throughout all semesters of undergraduate study.',
+    tags: ['Academic Excellence'],
   },
 ]
 
@@ -44,22 +43,23 @@ export default function Projects() {
     <div className="page-projects">
       <section className="page-header">
         <Container>
-          <h1 className="page-title">Projects</h1>
-          <p className="page-subtitle">A showcase of meaningful work and initiatives</p>
+          <h1 className="page-title">Projects & Awards</h1>
+          <p className="page-subtitle">Notable work and recognition</p>
         </Container>
       </section>
 
       <section className="content-section">
         <Container>
           <Row>
-            {projects.map((project, i) => (
+            {projectsAndAwards.map((item, i) => (
               <Col md={6} lg={4} className="mb-4" key={i}>
                 <div className="project-card">
-                  <span className="project-category">{project.category}</span>
-                  <h3 className="project-title">{project.title}</h3>
-                  <p className="project-desc">{project.description}</p>
+                  <span className={`project-category ${item.category.toLowerCase()}`}>{item.category}</span>
+                  {item.date && <span className="project-date">{item.date}</span>}
+                  <h3 className="project-title">{item.title}</h3>
+                  <p className="project-desc">{item.description}</p>
                   <div className="project-tags">
-                    {project.tags.map((tag, j) => (
+                    {item.tags.map((tag, j) => (
                       <span className="project-tag" key={j}>{tag}</span>
                     ))}
                   </div>
