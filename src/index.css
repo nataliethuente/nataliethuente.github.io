@@ -889,19 +889,18 @@ html {
 .project-category {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  min-width: 48px;
-  height: 48px;
-  padding: 0 0.6rem;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
   background: var(--bg-muted);
   color: var(--accent);
-  border-radius: 50%;
-  font-size: 0.78rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
   font-weight: 700;
   margin-bottom: 1rem;
   text-transform: uppercase;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.5px;
   align-self: flex-start;
+  min-height: 36px;
 }
 
 .project-title {
@@ -1086,18 +1085,18 @@ html {
 }
 
 .project-category.project {
-  background: #1f87c9;
-  color: #ffffff;
+  background: #e8f4fb; /* very light blue */
+  color: #1f87c9; /* darker blue text */
 }
 
 .project-category.award {
-  background: var(--accent);
-  color: #ffffff;
+  background: var(--accent-soft); /* light purple */
+  color: var(--accent); /* darker purple text */
 }
 
 .project-category.activity {
-  background: #e76fa8;
-  color: #ffffff;
+  background: #fde6f1; /* very light pink */
+  color: #e76fa8; /* darker pink text */
 }
 
 /* ===== Mobile Responsive for New Sections ===== */
