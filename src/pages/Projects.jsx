@@ -31,7 +31,7 @@ const projectsAndAwards = [
     category: 'Activity',
     date: '2024',
     description: 'Passionate about long-distance running and ran the Duluth Marathon in 2024.',
-    tags: null,
+    tags: ['Running'],
     image: runningImg,
     projectLink: null,
     githubLink: null,
