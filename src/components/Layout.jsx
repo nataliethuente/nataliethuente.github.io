@@ -7,7 +7,7 @@ const navLinks = [
   { id: 'education', label: 'Education' },
   { id: 'skills', label: 'Skills' },
   { id: 'experience', label: 'Experience' },
-  { id: 'projects', label: 'Projects & Awards' },
+  { id: 'projects', label: 'Projects, Awards & Activities' },
 ]
 
 export default function Layout() {

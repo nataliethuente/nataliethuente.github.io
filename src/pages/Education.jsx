@@ -40,23 +40,27 @@ export default function Education() {
             </div>
 
             <div className="edu-main-info">
-              <div className="edu-degree-section">
-                <div className="edu-box large">
-                  <span className="label">Degree</span>
-                  <p>{educationData.degree}</p>
-                </div>
-                <div className="edu-box large">
+              <div className="edu-box large">
+                <span className="label">Degree</span>
+                <p>{educationData.degree}</p>
+
+                <div style={{ marginTop: '1rem' }}>
                   <span className="label">Majors</span>
-                  <div className="majors-list">
+                  <div className="majors-list" style={{ marginTop: '0.5rem' }}>
                     {educationData.majors.map((major, index) => (
                       <span key={index} className="major-item">{major}</span>
                     ))}
                   </div>
                 </div>
-              </div>
-              <div className="edu-box">
-                <span className="label">GPA</span>
-                <p>{educationData.gpa}</p>
+
+                <div style={{ marginTop: '1rem' }}>
+                  <span className="label">GPA</span>
+                  <p>{educationData.gpa}</p>
+                </div>
+                <div style={{ marginTop: '1rem' }}>
+                  <span className="label">Honors</span>
+                  <p>Dean's List Recognition (2022–2026)</p>
+                </div>
               </div>
             </div>
 

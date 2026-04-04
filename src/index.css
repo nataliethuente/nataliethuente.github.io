@@ -408,7 +408,7 @@ html {
 
 .contact-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 1.5rem;
   justify-content: center;
   margin-top: 3rem;
@@ -421,7 +421,7 @@ html {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 2rem;
-  min-width: 200px;
+  min-width: 220px;
   text-align: center;
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
@@ -431,6 +431,18 @@ html {
   box-shadow: var(--shadow-md);
   transform: translateY(-2px);
   border-color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .contact-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-card {
+    width: 100%;
+    max-width: 420px;
+  }
 }
 
 .contact-label {
@@ -1076,6 +1088,11 @@ html {
   color: var(--accent);
 }
 
+.project-category.activity {
+  background: var(--accent-soft);
+  color: #1f87c9;
+}
+
 /* ===== Mobile Responsive for New Sections ===== */
 @media (max-width: 768px) {
   .edu-main-info {
@@ -1143,8 +1160,8 @@ html {
   width: 100%;
   height: 200px;
   overflow: hidden;
-  border-radius: var(--radius) var(--radius) 0 0;
-  margin: -2.25rem -2.25rem 1.5rem -2.25rem;
+  border-radius: var(--radius);
+  margin: 0 0 1rem 0;
   background: var(--border-light);
 }
 

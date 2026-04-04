@@ -1,6 +1,8 @@
 import { Container, Row, Col } from 'react-bootstrap'
 import regenmedImg from '../assets/regenmed.jpeg'
 import soeImg from '../assets/soe.jpeg'
+import runningImg from '../assets/running.png'
+import florenceImg from '../assets/florence.JPG'
 
 const projectsAndAwards = [
   {
@@ -14,16 +16,6 @@ const projectsAndAwards = [
     githubLink: null,
   },
   {
-    title: 'Virtual Environment Patient Portal',
-    category: 'Project',
-    date: 'July 2024',
-    description: 'Installed and configured patient portal in virtual testing environment at Olympus Corporation, managing setup, testing and configuration to ensure secure access to healthcare data.',
-    tags: ['Testing', 'Configuration', 'Security'],
-    image: null,
-    projectLink: null,
-    githubLink: null,
-  },
-  {
     title: 'Dick and Julie Daly Award',
     category: 'Award',
     date: '2026',
@@ -31,6 +23,27 @@ const projectsAndAwards = [
     tags: ['Recognition'],
     image: soeImg,
     projectLink: 'https://education.wisc.edu/about/faculty-staff-awards/2026-faculty-and-staff-award-winners/#daly-student-award',
+    githubLink: null,
+  },
+  /* Dean's List moved to Education section */
+  {
+    title: 'Distance Running',
+    category: 'Activity',
+    date: '2024',
+    description: 'Passionate about long-distance running and ran the Duluth Marathon in 2024.',
+    tags: ['Running', 'Endurance'],
+    image: runningImg,
+    projectLink: null,
+    githubLink: null,
+  },
+  {
+    title: 'Travel',
+    category: 'Activity',
+    date: 'Spring 2025',
+    description: 'Enjoys traveling and experiencing different cultures. Studied abroad in Florence, Italy in Spring 2025, and developed a strong interest for exploring new places.',
+    tags: ['Travel', 'Study Abroad'],
+    image: florenceImg,
+    projectLink: null,
     githubLink: null,
   },
   {
@@ -44,11 +57,11 @@ const projectsAndAwards = [
     githubLink: null,
   },
   {
-    title: 'Deans List Recognition',
-    category: 'Award',
-    date: '2022-2026',
-    description: 'Recognized for maintaining a high GPA (3.8+) throughout all semesters of undergraduate study.',
-    tags: ['Academic Excellence'],
+    title: 'Virtual Environment Patient Portal',
+    category: 'Project',
+    date: 'July 2024',
+    description: 'Installed and configured patient portal in virtual testing environment at Olympus Corporation, managing setup, testing and configuration to ensure secure access to healthcare data.',
+    tags: ['Testing', 'Configuration', 'Security'],
     image: null,
     projectLink: null,
     githubLink: null,
@@ -60,8 +73,8 @@ export default function Projects() {
     <div className="page-projects">
       <section className="page-header">
         <Container>
-          <h1 className="page-title">Projects & Awards</h1>
-          <p className="page-subtitle">Notable work and recognition</p>
+          <h1 className="page-title">Projects, Awards & Activities</h1>
+          <p className="page-subtitle">Notable work, recognition, and activities</p>
         </Container>
       </section>
 
