@@ -25,7 +25,7 @@ export default function SkillsSoftware() {
       <section className="page-header">
         <Container>
           <h1 className="page-title">Skills & Software</h1>
-          <p className="page-subtitle">Technical expertise and tools</p>
+        
         </Container>
       </section>
 

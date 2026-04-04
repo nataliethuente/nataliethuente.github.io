@@ -31,7 +31,7 @@ const projectsAndAwards = [
     category: 'Activity',
     date: '2024',
     description: 'Passionate about long-distance running and ran the Duluth Marathon in 2024.',
-    tags: ['Running', 'Endurance'],
+    tags: null,
     image: runningImg,
     projectLink: null,
     githubLink: null,
@@ -74,7 +74,6 @@ export default function Projects() {
       <section className="page-header">
         <Container>
           <h1 className="page-title">Projects, Awards & Activities</h1>
-          <p className="page-subtitle">Notable work, recognition, and activities</p>
         </Container>
       </section>
 

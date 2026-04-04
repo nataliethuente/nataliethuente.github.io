@@ -65,7 +65,7 @@ export default function Experience() {
       <section className="page-header">
         <Container>
           <h1 className="page-title">Experience</h1>
-          <p className="page-subtitle">Professional and leadership experience</p>
+          
         </Container>
       </section>
 
