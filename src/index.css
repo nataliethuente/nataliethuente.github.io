@@ -988,10 +988,11 @@ html {
 
 /* ===== EDUCATION PAGE ENHANCEMENTS ===== */
 .edu-main-info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
   gap: 2rem;
   margin-bottom: 3rem;
+  width: 100%;
 }
 
 .edu-degree-section {
@@ -1002,6 +1003,8 @@ html {
 
 .edu-box.large {
   padding: 3rem 2rem;
+  max-width: 900px;
+  width: 100%;
 }
 
 .majors-list {
